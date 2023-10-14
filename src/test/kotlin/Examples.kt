@@ -1,3 +1,4 @@
+import io.github.shalva97.initNewPipe
 import org.schabi.newpipe.extractor.ServiceList
 import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import kotlin.test.Test
@@ -19,7 +20,6 @@ class Examples {
         extractor.videoStreams.forEach {
             println("Video: ${it.bitrate} - ${it.content}")
         }
-
     }
 
     @Test

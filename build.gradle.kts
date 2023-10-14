@@ -3,8 +3,8 @@ plugins {
     application
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "io.github.shalva97"
+version = "1.0"
 
 repositories {
     mavenCentral()
