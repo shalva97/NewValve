@@ -14,6 +14,9 @@ class Examples {
 
         println("Video name: " + extractor.name)
         println("Uploader: " + extractor.uploaderName)
+        println("Category: " + extractor.category)
+        println("Likes: " + extractor.likeCount)
+        println("Views: " + extractor.viewCount)
         extractor.audioStreams.forEach {
             println("Audio: ${it.averageBitrate} - ${it.codec} - ${it.content}")
         }

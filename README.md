@@ -19,12 +19,9 @@ fun getVideoInfo() {
 
     println("Video name: " + extractor.name)
     println("Uploader: " + extractor.uploaderName)
-    extractor.audioStreams.forEach {
-        println("Audio: ${it.averageBitrate} - ${it.codec} - ${it.content}")
-    }
-    extractor.videoStreams.forEach {
-        println("Video: ${it.bitrate} - ${it.content}")
-    }
+    println("Category: " + extractor.category)
+    println("Likes: " + extractor.likeCount)
+    println("Views: " + extractor.viewCount)
 }
 ```
 
