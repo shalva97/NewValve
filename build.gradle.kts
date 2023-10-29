@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "1.9.0"
     application
     id("io.realm.kotlin") version "1.11.0"
+    `maven-publish`
 }
 
 group = "io.github.shalva97"
