@@ -38,5 +38,5 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-src/test/kotlin/MyStuff.kt
+**/MyStuff.kt
 src/test/resources/videos.txt
