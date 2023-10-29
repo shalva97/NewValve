@@ -1,11 +1,11 @@
 # New Valve
 
-A library that adds Downloader implementation with OkHttp library.
+A library that adds Downloader implementation with OkHttp to [NewPipeExtractor](https://github.com/TeamNewPipe/NewPipeExtractor).
 
 # Usage
 
 Run `initNewPipe()` once to initialize NewPipeExtractor. Pick a service and extractor you want. Full
-list of services can be found in `ServiceList` class. 
+list of services can be found in `ServiceList` class. Full list of extractors can be found in `StreamingService` class.
 
 # Example
 
