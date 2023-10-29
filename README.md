@@ -25,4 +25,20 @@ fun getVideoInfo() {
 }
 ```
 
-You can find more examples in `src/test/kotlin/Examples.kt`.
+More examples are in `src/test/kotlin/Examples.kt`.
+
+# Installation
+
+Set JVM toolchain to at least 11:
+
+```kotlin
+kotlin {
+    jvmToolchain(11)
+}
+```
+
+Add dependency:
+
+```kotlin
+implementation("com.github.shalva97:NewValve:1.0")
+```
