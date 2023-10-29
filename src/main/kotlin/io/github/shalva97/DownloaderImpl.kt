@@ -8,15 +8,10 @@ import org.schabi.newpipe.extractor.downloader.Request
 import org.schabi.newpipe.extractor.downloader.Response
 import org.schabi.newpipe.extractor.exceptions.ReCaptchaException
 import java.io.IOException
-import java.util.*
 
-class DownloaderImpl(private val client: OkHttpClient) : Downloader() {
+internal class DownloaderImpl(private val client: OkHttpClient) : Downloader() {
 
     private val cookies = HashMap<String, String>()
-
-//    private val client: OkHttpClient = builder
-//        .readTimeout(30, TimeUnit.SECONDS)
-//        .build()
 
     private fun getCookies(url: String): String {
         val resultCookies: MutableList<String> = ArrayList()
