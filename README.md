@@ -37,6 +37,13 @@ kotlin {
 }
 ```
 
+Add Jitpack:
+```kotlin
+repositories {
+    maven { setUrl("https://jitpack.io") }
+}
+```
+
 Add dependency:
 
 ```kotlin
