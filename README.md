@@ -25,7 +25,7 @@ fun getVideoInfo() {
 }
 ```
 
-More examples are in `src/test/kotlin/Examples.kt`. Note for Android: Add internet permission and run http requests on IO thread.
+More examples are in `src/test/kotlin/Examples.kt`. Note for Android: Add internet permission and run `extractor.fetchPage()` on IO thread.
 
 # Installation
 
