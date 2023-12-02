@@ -39,7 +39,7 @@ kotlin {
         }
         val jvmTest by getting {
             dependencies {
-                implementation("io.realm.kotlin:library-base:1.11.0")
+                implementation("io.realm.kotlin:library-base:1.13.0")
                 implementation(kotlin("test"))
             }
         }
