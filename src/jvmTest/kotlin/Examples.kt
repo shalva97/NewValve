@@ -1,6 +1,5 @@
 import io.github.shalva97.initNewPipe
 import org.schabi.newpipe.extractor.ServiceList
-import org.schabi.newpipe.extractor.stream.StreamInfoItem
 import kotlin.test.Test
 
 class Examples {
@@ -30,17 +29,22 @@ class Examples {
         initNewPipe()
         val service = ServiceList.YouTube
 
-        val extractor =
+        val channelExtractor =
             service.getChannelExtractor("https://www.youtube.com/channel/UC2H-gXCiXWfLdf9Be8pQ6Vg")
-        extractor.fetchPage()
+        channelExtractor.fetchPage()
 
-        println("Channel name: " + extractor.name)
-        println("Channel name: " + extractor.subscriberCount)
+        println("Channel name: " + channelExtractor.name)
+        println("Subscribers: " + channelExtractor.subscriberCount)
+        println("-------------------------")
 
-        var currentPage = extractor.initialPage
+        val tabExtractor =
+            service.getChannelTabExtractorFromId("UC2H-gXCiXWfLdf9Be8pQ6Vg", "videos")
+        tabExtractor.fetchPage()
+
+        var currentPage = tabExtractor.initialPage
         var counter = 0
 
-        currentPage.items.forEach { it: StreamInfoItem ->
+        currentPage.items.forEach {
             counter++
             println("${it.url} - $counter - ${it.name}")
         }
@@ -53,6 +57,4 @@ class Examples {
 //            }
 //        }
     }
-
-
 }
