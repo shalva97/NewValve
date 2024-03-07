@@ -1,7 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.9.23"
     application
-    id("io.realm.kotlin") version "1.13.0"
     `maven-publish`
 }
 
@@ -39,7 +38,6 @@ kotlin {
         }
         val jvmTest by getting {
             dependencies {
-                implementation("io.realm.kotlin:library-base:1.13.0")
                 implementation(kotlin("test"))
             }
         }

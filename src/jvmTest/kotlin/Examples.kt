@@ -1,12 +1,19 @@
 import io.github.shalva97.initNewPipe
 import org.schabi.newpipe.extractor.ServiceList
+import kotlin.test.BeforeTest
 import kotlin.test.Test
 
 class Examples {
+
+    private val service = ServiceList.YouTube
+
+    @BeforeTest
+    fun before() {
+        initNewPipe()
+    }
+
     @Test
     fun getVideoInfo() {
-        initNewPipe()
-        val service = ServiceList.YouTube
 
         val extractor = service.getStreamExtractor("https://www.youtube.com/watch?v=3L6RDYFXURA")
         extractor.fetchPage()
