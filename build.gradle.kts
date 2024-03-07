@@ -1,5 +1,5 @@
 plugins {
-    kotlin("multiplatform") version "1.9.22"
+    kotlin("multiplatform") version "1.9.23"
     application
     id("io.realm.kotlin") version "1.13.0"
     `maven-publish`
