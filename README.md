@@ -47,5 +47,5 @@ repositories {
 Add dependency:
 
 ```kotlin
-implementation("com.github.shalva97:NewValve:1.1")
+implementation("com.github.shalva97:NewValve:1.2")
 ```
