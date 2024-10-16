@@ -23,7 +23,7 @@ fun getVideoInfo() {
     println("Likes: " + extractor.likeCount)
     println("Views: " + extractor.viewCount)
 }
-```
+```aaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 More examples are in `src/test/kotlin/Examples.kt`. Note for Android: Add internet permission and run `extractor.fetchPage()` on IO thread.
 
