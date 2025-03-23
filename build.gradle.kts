@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "io.github.shalva97"
-version = "1.3"
+version = "1.4"
 
 repositories {
     mavenCentral()
@@ -32,7 +32,7 @@ kotlin {
     sourceSets {
         val jvmMain by getting {
             dependencies {
-                api("com.github.teamnewpipe:NewPipeExtractor:0.24.4")
+                api("com.github.TeamNewPipe.NewPipeExtractor:NewPipeExtractor:v0.24.5")
                 implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.14")
             }
         }
