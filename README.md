@@ -31,7 +31,7 @@ fun getVideoInfo() {
 }
 ```
 
-More examples are in `src/test/kotlin/Examples.kt`. Note for Android: Add internet permission and run `extractor.fetchPage()` on IO thread.
+More examples are in `src/test/kotlin/Examples.kt`.
 
 # Installation
 
@@ -55,3 +55,6 @@ Add dependency:
 ```kotlin
 implementation("com.github.shalva97:NewValve:1.5")
 ```
+Notes for Android:
+- To use NewPipe Extractor in Android projects with a minSdk below 33, [core library desugaring](https://developer.android.com/studio/write/java8-support#library-desugaring) with the desugar_jdk_libs_nio artifact is required.
+- Add internet permission and run `extractor.fetchPage()` on IO thread.
