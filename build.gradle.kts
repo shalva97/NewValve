@@ -32,7 +32,7 @@ kotlin {
     sourceSets {
         val jvmMain by getting {
             dependencies {
-                api("com.github.TeamNewPipe.NewPipeExtractor:NewPipeExtractor:v0.24.5")
+                api("com.github.TeamNewPipe.NewPipeExtractor:NewPipeExtractor:0.24.6")
                 implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.14")
             }
         }
