@@ -33,7 +33,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 api("com.github.TeamNewPipe.NewPipeExtractor:NewPipeExtractor:0.24.6")
-                implementation("com.squareup.okhttp3:okhttp:5.2.0")
+                implementation("com.squareup.okhttp3:okhttp:5.2.1")
             }
         }
         val jvmTest by getting {
