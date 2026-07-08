@@ -18,7 +18,7 @@ kotlin {
 
     sourceSets {
         jvmMain.dependencies {
-            api("com.github.teamnewpipe:NewPipeExtractor:v0.26.3")
+            api("com.github.teamnewpipe:NewPipeExtractor:0.26.3")
             implementation("com.squareup.okhttp3:okhttp:5.4.0")
         }
         jvmTest.dependencies {
