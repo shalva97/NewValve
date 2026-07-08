@@ -35,7 +35,7 @@ More examples are in `src/test/kotlin/Examples.kt`.
 
 # Installation
 
-Set JVM toolchain to at least 11:
+Set JVM toolchain to at least 17:
 
 ```kotlin
 kotlin {
