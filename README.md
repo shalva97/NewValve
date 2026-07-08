@@ -39,7 +39,7 @@ Set JVM toolchain to at least 11:
 
 ```kotlin
 kotlin {
-    jvmToolchain(11)
+    jvmToolchain(17)
 }
 ```
 
