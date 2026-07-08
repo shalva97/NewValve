@@ -53,7 +53,7 @@ repositories {
 Add dependency:
 
 ```kotlin
-implementation("com.github.shalva97:NewValve:1.5")
+implementation("com.github.shalva97:NewValve:1.6")
 ```
 ### Android:
 - To use NewPipe Extractor in Android projects with a minSdk below 33, [core library desugaring](https://developer.android.com/studio/write/java8-support#library-desugaring) with the desugar_jdk_libs_nio artifact is required.

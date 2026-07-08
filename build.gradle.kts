@@ -1,27 +1,14 @@
 plugins {
     kotlin("multiplatform") version "2.4.0"
-    application
     `maven-publish`
 }
 
 group = "io.github.shalva97"
-version = "1.4"
+version = "1.6"
 
 repositories {
     mavenCentral()
     maven { setUrl("https://jitpack.io") }
-}
-
-allprojects {
-    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-        kotlinOptions {
-            jvmTarget = "11"
-        }
-    }
-}
-
-tasks.test {
-    useJUnitPlatform()
 }
 
 kotlin {
@@ -30,20 +17,12 @@ kotlin {
     jvm()
 
     sourceSets {
-        val jvmMain by getting {
-            dependencies {
-                api("com.github.TeamNewPipe.NewPipeExtractor:NewPipeExtractor:0.24.6")
-                implementation("com.squareup.okhttp3:okhttp:5.4.0")
-            }
+        jvmMain.dependencies {
+            api("com.github.teamnewpipe:NewPipeExtractor:v0.26.3")
+            implementation("com.squareup.okhttp3:okhttp:5.4.0")
         }
-        val jvmTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-            }
+        jvmTest.dependencies {
+            implementation(kotlin("test"))
         }
     }
-}
-
-application {
-    mainClass.set("MainKt")
 }
